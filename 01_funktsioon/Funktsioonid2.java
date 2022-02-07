@@ -18,5 +18,6 @@ public class Funktsioonid2{
 		for(int i=0;i<arvud.length; i++){
 			System.out.println(sentimeetriteks(arvud[i]));
 		}
+		System.out.println(Math.sqrt(36));
 	}
 }
