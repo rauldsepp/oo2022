@@ -1,8 +1,11 @@
+import java.util.Scanner;
 public class KodutooProov{
 	public static void main(String[] args){
-		Kodutoo d1=new Kodutoo(6);
-		Kodutoo d2=new Kodutoo(12);
-    	System.out.println(d1.roll());
+		Scanner rida=new Scanner(System.in);
+		System.out.print("Taringu kulgede arv: ");
+		int kulg=rida.nextInt();
+		Kodutoo t1=new Kodutoo(kulg);
+    	System.out.println(t1.veereta());
 
 	}
 }

@@ -1,14 +1,14 @@
 import java.util.Random;
 
 public class Kodutoo{
-	private static Random generator=new Random();
+	private static Random generaator=new Random();
 	
-	private int numberOfSides;
+	private int kulgedeNumber;
 	
-	public Kodutoo(int newNumber){numberOfSides=newNumber;}
+	public Kodutoo(int uusNumber){kulgedeNumber=uusNumber;}
 	 
-	public int roll(){
-		int randomValue = generator.nextInt(numberOfSides);
-		return randomValue + 1;
+	public int veereta(){
+		int kulg = generaator.nextInt(kulgedeNumber);
+		return kulg + 1;
 	}
 }
