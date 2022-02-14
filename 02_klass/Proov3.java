@@ -1,7 +1,9 @@
+import java.util.*;  
 public class Proov3{
 	public static void main(String[] arg){
 		int[][] laud=new int[10][10];
-		String juhis="eeeekeeeeeeeeekeeeekeeeeeeeee";
+		Scanner sc=new Scanner(System.in); 
+		String juhis=sc.nextLine();
 		if(arg.length>0){juhis=arg[0];}
 		Kilpkonn k1=new Kilpkonn();
 		for(int i=0; i<juhis.length(); i++){
