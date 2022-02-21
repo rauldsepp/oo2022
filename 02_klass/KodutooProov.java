@@ -9,3 +9,13 @@ public class KodutooProov{
 
 	}
 }
+
+/*[raurau@greeny 02_klass]$ java KodutooProov
+Taringu kulgede arv: 6
+6
+[raurau@greeny 02_klass]$ java KodutooProov
+Taringu kulgede arv: 6
+2
+[raurau@greeny 02_klass]$ java KodutooProov
+Taringu kulgede arv: 6
+1*/
