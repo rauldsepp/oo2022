@@ -5,7 +5,7 @@ public class Proov2{
 		System.out.print("Mitu mängu: ");
 		int arvMange=esimeneRida.nextInt();
 		for(int j=0; j<arvMange; j++){
-			String[] panused=new String[7];
+			/*String[] panused=new String[7];
 			panused[0]="1";
 			panused[1]="2";
 			panused[2]="5";
@@ -16,7 +16,7 @@ public class Proov2{
 			System.out.println("Panused: ");
 			for(int i=0;i<panused.length;i++){
 				System.out.println(panused[i]);
-			}
+			}*/
 			Scanner rida=new Scanner(System.in);
 			System.out.print("Sinu panus: ");
 			int panus=rida.nextInt();
@@ -39,3 +39,18 @@ public class Proov2{
 		}	
 	}	
 }
+
+/*[raurau@greeny kodutöö]$ java Proov2
+Mitu mängu: 2
+Sinu panus: 10
+Sinu pakkumine: 1
+Number: 1.0
+Tubli! Võitsid 10 eurot.
+Raha: 10
+Sinu panus: 200
+Sinu pakkumine: 1
+Number: 3.0
+Kahju! Kaotasid 200 eurot.
+Raha alles: -190
+*/
+
