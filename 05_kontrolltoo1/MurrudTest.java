@@ -26,14 +26,16 @@ public class MurrudTest {
             double segaarv = s.segaarv(summa, uusNimetaja);
             summa -= (segaarv * uusNimetaja);
             
-            if(Math.round(segaarv)!=0){
+            if(Math.round(segaarv)!=0&Math.round(summa)!=0){
                 System.out.println("Segaarvuga: "+Math.round(segaarv)+" "+Math.round(summa)+"/"+Math.round(uusNimetaja));
 
                 String taandatud = s.murruna(summa, uusNimetaja);
                 System.out.println("Taandatud: "+Math.round(segaarv)+" "+taandatud);
             } else {
+                double segaarv1 = s.segaarv(summa, uusNimetaja);
                 String taandatud = s.murruna(summa, uusNimetaja);
                 System.out.println("Taandatud: "+taandatud);
+                System.out.println("Summa: "+segaarv1);
             }
         } else {
             System.out.println("Summa: 1");
