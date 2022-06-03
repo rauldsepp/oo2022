@@ -1,0 +1,23 @@
+OOP kontseptsioonide peamised ideed hõlmavad abstraktsiooni, kapseldamist, pärimist ja polümorfismi.
+Põhimõtteliselt võimaldavad Java OOP-i kontseptsioonid meil luua töömeetodeid ja muutujaid, seejärel kasutada neid kõiki või osa neist turvalisust ohustamata.
+
+Abstraktsioon (Abstraction). Lihtsate asjade kasutamine keerukuse väljendamiseks.
+Javas tähendab abstraktsioon lihtsaid asju, nagu objektid, klassid ja muutujad, mis esindavad keerukamat aluseks olevat koodi ja andmeid.
+See on oluline, kuna võimaldab vältida sama töö mitu korda kordamist.
+
+Kapseldamine (Encapsulation). Klassi väljade privaatsuse hoidmise praktika, misjärel võimaldatakse neile väljadele juurdepääs avalike meetodite kaudu.
+Kapseldamine on kaitsebarjäär, mis hoiab andmed ja koodi turvaliselt klassis endas.
+Seejärel saame taaskasutada objekte, nagu koodikomponendid või muutujad, võimaldamata avatud juurdepääsu kogu andmesüsteemile.
+
+Pärand (Inheritance). Java objektorienteeritud programmeerimise eripäraks on pärimine, mis võimaldab programmeerijatel luua uusi klasse, millel on mõned olemasolevate klasside atribuudid.
+Pärimise kasutamine võimaldab meil tugineda varasemale tööle
+
+Polümorfism (Polymorphism). Võimaldab programmeerijatel kasutada Javas sama sõna, et tähendada erinevates kontekstides erinevaid asju. Üks polümorfismi vorme on meetodi ülekoormus.
+See on siis, kui kood ise tähendab erinevaid tähendusi. Teine vorm on meetodi alistamine. See on siis, kui esitatud muutujate väärtustel on erinev tähendus.
+
+Meetodi alistamise korral saab alamklass kasutada OOP polümorfismi kontseptsiooni, et alistada oma emaklassi meetodi.
+See võimaldab programmeerijal kasutada ühte meetodit erineval viisil, olenevalt sellest, kas selle kutsub esile emaklassi objekt või alamklassi objekt.
+
+Meetodi ülekoormuse korral võib üks meetod täita erinevaid funktsioone olenevalt kontekstist, milles seda kutsutakse.
+See tähendab, et ühe meetodi nimi võib toimida erineval viisil, olenevalt sellest, millised argumendid sellele edastatakse.
+(Näiteks Punktide näide, kui luua 3D punkt, täidab ta Punkt3D meetodi kohustusi, kui luua 2D punkt, siis Punkt2D meetodit.)

@@ -1,0 +1,36 @@
+interface Viisakas{
+  public void tervita(String partner);
+}
+Liides on täiesti "abstraktne klass", mida kasutatakse seotud meetodite rühmitamiseks tühjade kehadega:
+Kui loodav klass realiseerib liidest Viisakas, peab temas olema meetod tervita, mis saab parameetriks sõne.
+Liidese realiseerimine annab klassile kohustuse osata liideses ette antud tegevusi (ehk meetodeid).
+Samas annab aga selle klassi isendile asuda igal pool, kus on lubatud olla vastavat liidest realiseerival klassil.
+
+Abstraktne klass: on piiratud klass, mida ei saa kasutada objektide loomiseks (sellele juurdepääsu saamiseks peab see olema päritud mõnest teisest klassist).
+Abstraktne meetod: saab kasutada ainult abstraktses klassis ja sellel ei ole keha. Keha annab alamklass (päritud).
+
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}

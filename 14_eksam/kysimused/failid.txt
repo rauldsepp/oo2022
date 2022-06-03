@@ -1,0 +1,35 @@
+Javas faili loomiseks saate kasutada meetodit createNewFile(). See meetod tagastab tõeväärtuse: tõene, kui fail loodi edukalt, ja false, kui fail on juba olemas.
+Pange tähele, et meetod on blokis try...catch. See on vajalik, kuna see annab tõrke ilmnemisel välja IOExceptioni (kui faili ei saa mingil põhjusel luua):
+
+import java.io.File;  // Import the File class
+import java.io.IOException;  // Import the IOException class to handle errors
+
+public class CreateFile {
+  public static void main(String[] args) {
+    try {
+      File myObj = new File("filename.txt");
+      if (myObj.createNewFile()) {
+        System.out.println("File created: " + myObj.getName());
+      } else {
+        System.out.println("File already exists.");
+      }
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+  }
+}
+Lihttüübid
+byte    - 8-bitine täisarv vahemikus -128 kuni 127.
+short   - 16-bitine täisarv  -32768 kuni 32767.
+int     - 32-bitine täisarv  -2147483648 kuni 2147483647.
+long    - 64-bitine täisarv  -9223372036854775808 kuni
+                 9223372036854775807.
+float   - 32-bitine reaalarv ligikaudses vahemikus -3,4x10^38 
+                  kuni 3,4x10^38 seitsme tüvekohaga. 
+double  - 64-bitine ujukomaarv (reaalarv) ligikaudses vahemikus 
+            -1,7x10^308 kuni 1,7x10^308 15 tüvekohaga. 
+char    - 16-bitine Unicode sümbol. Näit. 'a', '\n',
+boolean - tõeväärtustüüp võimalike väärtustega true ja false. 
+
+Struktuursed andmetüübid on massiivid.

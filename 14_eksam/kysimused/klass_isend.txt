@@ -1,0 +1,44 @@
+Klass on nagu objektikonstruktor või "kavand" objektide loomiseks.
+Java-objekt on Java-klassi liige (nimetatakse ka eksemplariks). Igal objektil on identiteet, käitumine ja olek.
+Objekti olek salvestatakse väljadele (muutujatele), meetodid (funktsioonid) aga näitavad objekti käitumist. Objektid luuakse klassidest.
+Javas luuakse objekt kasutades märksõna "new".
+
+private ja public vahel seisneb erinevus selles, kui juurdepääsetav oleks konkreetne väli, meetod või klass.
+public tähendab, et pääsete sellele juurde kõikjal, samas kui private tähendab, et pääsete sellele juurde ainult oma klassi piires.
+
+Java static märksõna kasutatakse peamiselt mälu haldamiseks. Java static märksõna kasutatakse antud klassi sama muutuja või meetodi jagamiseks.
+Kasutajad saavad rakendada muutujate, meetodite, plokkide ja pesastatud klassidega static märksõnu. static märksõna kuulub klassi kui klassi eksemplar. static märksõna kasutatakse konstantse muutuja või meetodi jaoks, mis on klassi iga eksemplari jaoks sama.
+Kui liige on kuulutatud staatiliseks, pääseb sellele juurde enne mis tahes selle klassi objektide loomist ja ilma ühelegi objektile viitamata.
+
+// Java program to demonstrate that a static member
+// can be accessed before instantiating a class
+  
+class Test
+{
+    // static method
+    static void m1()
+    {
+        System.out.println("from m1");
+    }
+  
+    public static void main(String[] args)
+    {
+          // calling m1 without creating
+          // any object of class Test
+           m1();
+    }
+}
+
+Massiive kasutatakse mitme väärtuse salvestamiseks ühte muutujasse, selle asemel, et deklareerida iga väärtuse jaoks eraldi muutujaid.
+Massiivi deklareerimiseks määrake muutuja tüüp nurksulgudega:
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+Sisseehitatud massiivi ja Java ArrayListi erinevus seisneb selles, et massiivi suurust ei saa muuta (kui soovite massiivi elemente lisada või massiivist eemaldada, peate looma uue).
+Kuigi elemente saab lisada ja eemaldada ArrayListist igal ajal, kui soovite. Süntaks on samuti veidi erinev:
+
+import java.util.ArrayList; // import the ArrayList class
+
+ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+
+cars.add("Volvo");
+cars.add("BMW");

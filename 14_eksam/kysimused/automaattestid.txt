@@ -1,0 +1,2 @@
+Testimise automatiseerimine aitab parandada teie süsteemi tõhusust ja täpsust.
+Lisaks leevendab see ka enamikku tüütutest pingutustest, mida peate oma rakenduse käsitsi silumiseks ja testimiseks tegema.
